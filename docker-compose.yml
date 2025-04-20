@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   app:
-    build: .
+    build: PycharmProjects/cabinetsense-chatbot
     env_file: .env
     volumes:
       - ./cabinetsense-knowledgebase:/app/cabinetsense-knowledgebase

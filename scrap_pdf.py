@@ -51,7 +51,7 @@ _xu.getSize = _safe_getSize
 load_dotenv()
 ROOT_URL      = os.getenv("ROOT_URL", "https://sites.google.com/a/cabinetsensesoftware.com/cabinetsense-wiki/home")
 BUILD_HISTORY = os.getenv("BUILD_HISTORY", "https://sites.google.com/a/cabinetsensesoftware.com/cabinetsense-wiki/build-history")
-OUT_DIR       = Path(os.getenv("KNOWLEDGE_DIR", "./cabinetsense-knowledgebase"))
+OUT_DIR       = Path(os.getenv("KNOWLEDGE_DIR", "cabinetsense-knowledgebase"))
 PAGES_DIR     = OUT_DIR / "pages"
 RELEASES_DIR  = OUT_DIR / "releases"
 for folder in (PAGES_DIR, RELEASES_DIR):

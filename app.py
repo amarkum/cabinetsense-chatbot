@@ -15,7 +15,7 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 MODEL_NAME     = os.getenv("MODEL_NAME", "gpt-3.5-turbo")
 DB_DIR         = os.getenv("CHROMA_DB_DIR", "./chroma_db")
-NOTES_DIR      = os.getenv("KNOWLEDGE_DIR", "./cabinetsense-knowledgebase")
+NOTES_DIR      = os.getenv("KNOWLEDGE_DIR", "cabinetsense-knowledgebase")
 PORT           = int(os.getenv("PORT", 8000))
 
 if not OPENAI_API_KEY:
